@@ -1,38 +1,172 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004d99;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  padding: 50px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer {
+  background-color: #0b2d5e; /* Dark blue background */
   color: white;
+  padding: 40px 0;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-logo h2 {
+  font-size: 24px;
+}
+
+.footer-menu ul, .footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu li, .footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a, .footer-social a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  background-color: #001b3a;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+
+/* Articles Section */
+.articles-section {
+  padding: 50px;
+  background-color: #f0f8ff; /* Light blue background for article section */
+  text-align: center;
+}
+
+.articles-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.article-card {
+  width: 250px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.article-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.article-card h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.article-card p {
+  font-size: 14px;
+  margin: 10px;
+}
+
+.read-more {
+  display: block;
+  background-color: #004d99;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background-color: #005a66;
+}
+.volunteer-section {
+  padding: 100px;
+  background-color: #eaf4fc;
+  text-align: center;
+}
+
+.program-card {
+  text-align: center;
+}
+
+.program-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.program-card h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.program-card p {
+  font-size: 14px;
+  margin: 10px;
+}
+
+.header-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header-link {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  background-color: #004d99;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.header-link:hover {
+  background-color: #003366;
 }
